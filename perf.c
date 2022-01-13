@@ -9,11 +9,8 @@
 #include <inttypes.h>
 #include <sys/types.h>
 
-
-
 unsigned long start_profile() {
     struct perf_event_attr pe;
-    long long count;
     int fd;
 
     memset(&pe, 0, sizeof(struct perf_event_attr));
